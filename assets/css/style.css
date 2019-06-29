@@ -202,29 +202,42 @@ button:hover {
 
 
 @media only screen and (max-width: 640px) {
-   .nav-items{
-       width: 100%;
-   }
+    .nav-items{
+        width: 100vw;
+    }
+
+    h1{
+        display: inline;
+        width: 100vw;
+        padding: 0px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }    
+
+
    
    section.about-me-section {
     height: 100%;
 }
 
-
-    h1{
-        display: inline;
-        width: 100%;
-    }    
+ 
 
     ul{
-        width: 100%;
-        padding-left: 30%;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        width: 100vw;
         
     }
     li {
         display: inline-block;
-        float: left;
+        float: right;
         
+    }
+
+    li#last-link{
+        padding-right: 25%;
     }
     section{
         width: 90%;
@@ -232,10 +245,32 @@ button:hover {
 
     .card {
         height: 150px;
-        width: 200px;
+        width: 60%;
         display: block;
-        margin: 5px 20px;
         display: inline-block;
+        padding-left: 10%;
+        padding-right: 10%;
     }
     
+    .card-image {
+        width: 100%;
+        height: 180px;
+    }
+    
+    .card-desc {
+        background-color: #4aaaa5;
+        padding: 10px 5px;
+        color: white;
+        text-align: center;
+        position: relative;
+        bottom: 85px;
+        opacity: 0.9;
+    }
+
+    footer{
+        width: 100vw;
+    }
+
+     
+
 }
